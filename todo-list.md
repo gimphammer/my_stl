@@ -53,7 +53,7 @@
 
 - **练习点**：组合型元编程（综合前面知识）
 
-## 8. `std::conditional<B, T, F>`
+## ~~8. `std::conditional<B, T, F>`~~
 
 - **类别**：编译期 if
 - **作用**：如果 B 为 true，结果是 T；否则是 F
