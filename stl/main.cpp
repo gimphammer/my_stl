@@ -1,8 +1,8 @@
 /**
  * @Author: gimphammer@gmail.com
  * @Date: 2026-05-26 21:13:23
- * @LastEditors: gimphammer@gmail.com
- * @LastEditTime: 2026-05-30 07:54:38
+ * @LastEditors: gimphammer
+ * @LastEditTime: 2026-05-31 18:45:09
  * @Copyright: Copyright (c) 2026 by gimphammer@gmail.com, All rights reserved.
  * @Description: [None]
  */
@@ -13,6 +13,9 @@
 #include "stl/stl_tools_impl/my_is_void.h"
 #include "stl/stl_tools_impl/my_is_integral.h"
 #include "stl/stl_tools_impl/my_is_pointer.h"
+#include "stl/stl_tools_impl/my_is_class.h"
+#include "stl/stl_tools_impl/my_remove_pointer.h"
+#include "stl/stl_tools_impl/my_remove_reference.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -23,5 +26,8 @@ int main(int argc, const char * argv[]) {
   test_my_is_void();
   test_my_is_integral();
   test_my_is_pointer();
+  test_my_is_class();
+  test_my_remove_pointer();
+  test_my_remove_reference();
   return EXIT_SUCCESS;
 }

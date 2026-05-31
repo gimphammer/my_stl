@@ -2,32 +2,32 @@
 
 全部来自 `<type_traits>`，是元编程基石。
 
-## 1. `std::is_void<T>`
+## ~~1. `std::is_void<T>`~~
 
 - **类别**：类型检查模板
 - **作用**：判断类型 T 是否为 `void`
 - **返回**：编译期布尔值（`true_type` / `false_type`）
 - **练习点**：基础偏特化
 
-## 2. `std::is_pointer<T>`
+## ~~2. `std::is_pointer<T>`~~
 
 - **类别**：类型检查模板
 - **作用**：判断 T 是否是指针类型（`int*`, `char*` 等）
 - **练习点**：偏特化匹配模式
 
-## 3. `std::is_integral<T>`
+## ~~3. `std::is_integral<T>`~~
 
 - **类别**：类型检查模板
 - **作用**：判断是否为整数类型（`int, bool, char, long` 等）
 - **练习点**：多条件偏特化
 
-## 4. `std::remove_reference<T>`
+## ~~4. `std::remove_reference<T>`~~
 
 - **类别**：类型转换工具
 - **作用**：把 `T&`、`T&&` 变成 `T`
 - **练习点**：引用剥离 + 类型别名
 
-## 5. `std::remove_pointer<T>`
+## ~~5. `std::remove_pointer<T>`~~
 
 - **类别**：类型转换工具
 - **作用**：把 `T*` 变成 `T`
@@ -59,7 +59,7 @@
 - **作用**：如果 B 为 true，结果是 T；否则是 F
 - **练习点**：编译期分支逻辑
 
-## 9. `std::is_class<T>`
+## ~~9. `std::is_class<T>`~~
 
 - **类别**：类型检查
 - **作用**：判断 T 是否是 class/struct/union
