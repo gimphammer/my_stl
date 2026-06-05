@@ -2,7 +2,7 @@
  * @Author: gimphammer@gmail.com
  * @Date: 2026-05-26 21:13:23
  * @LastEditors: gimphammer
- * @LastEditTime: 2026-05-31 18:59:41
+ * @LastEditTime: 2026-06-05 19:58:03
  * @Copyright: Copyright (c) 2026 by gimphammer@gmail.com, All rights reserved.
  * @Description: [None]
  */
@@ -17,6 +17,7 @@
 #include "stl/stl_tools_impl/my_remove_pointer.h"
 #include "stl/stl_tools_impl/my_remove_reference.h"
 #include "stl/stl_tools_impl/my_conditional.h"
+#include "stl/stl_tools_impl/my_invoke_result.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -31,5 +32,6 @@ int main(int argc, const char * argv[]) {
   test_my_remove_pointer();
   test_my_remove_reference();
   test_my_conditional();
+  test_my_invoke_result();
   return EXIT_SUCCESS;
 }
