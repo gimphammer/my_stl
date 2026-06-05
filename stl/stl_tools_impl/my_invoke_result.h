@@ -2,7 +2,7 @@
 * @Author: gimphammer
 * @Date: 2026-05-31 21:03:44
  * @LastEditors: gimphammer
- * @LastEditTime: 2026-06-05 20:09:40
+ * @LastEditTime: 2026-06-06 04:41:54
 * @Copyright: Copyright (c) 2026 by gimphammer@gmail.com, All rights reserved.
 * @Description: [None]
 */
@@ -21,6 +21,10 @@
 // 2. member function pointer   --> A::*
 // 3. member variable pointer   --> A::*
 //  
+
+namespace mst{
+
+
 
 
 //1.common callable 
@@ -106,7 +110,7 @@ struct my_invoke_result : my_invoke_result_impl<void, T, Args...>
 
 template <typename T, typename... Args>
 using my_invoke_result_t = typename my_invoke_result<T, Args...>::type;
-
+};
 
 void test_my_invoke_result();
 
