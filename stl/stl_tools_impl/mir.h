@@ -2,13 +2,19 @@
  * @Author: gimphammer
  * @Date: 2026-06-06 04:44:14
  * @LastEditors: gimphammer
- * @LastEditTime: 2026-06-06 09:01:02
+ * @LastEditTime: 2026-06-06 10:29:23
  * @Copyright: Copyright (c) 2026 by gimphammer@gmail.com, All rights reserved.
  * @Description: [None]
  */
 
 
-//This is only for practising again
+#ifndef MIR_H
+#define  MIR_H
+
+
+
+
+//This is only for practicing again
 //mir is for my_invoke_result
 
 #include <utility>
@@ -117,3 +123,5 @@ using mir_t = typename mir<T, Args...>::type;
 
 
 void test_mir();
+
+#endif //MIR_H

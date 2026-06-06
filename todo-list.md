@@ -121,7 +121,7 @@
   - `std::is_member_object_pointer_v<int*>` → `false`（普通指针，非成员变量指针）；
 - **练习点**：成员变量指针类型的偏特化匹配、与成员函数指针的类型区分。
 
-## 15. `std::enable_if<B, T = void>`
+## 15. ~~`std::enable_if<B, T = void>`~~
 
 - **类别**：编译期条件类型工具（SFINAE 核心）
 
@@ -199,13 +199,13 @@
   - `std::add_pointer_t<const double&&>` → `const double*`（先剥离右值引用）；
 - **练习点**：引用剥离 + 指针类型生成、函数类型转函数指针的偏特化。
 
-## 18. `std::is_same<T, U>`
+## ~~18. `std::is_same<T, U>`~~
 
 - **类别**：类型相等判断模板
 - **作用**：在编译期判断两个类型 T 和 U 是否为完全相同的类型（包括 cv 限定符、引用、指针等细节）。
 - **输入**：任意两个类型 T、U。
 - **输出**：编译期布尔值（继承自 `std::true_type` 或 `std::false_type`）：
-  - 若 T 和 U 是完全一致的类型 → `true_type`；
+  - 若 T 和 U 是完全一致的类型 → `trfue_type`；
   - 否则 → `false_type`；
 - **示例**：
   - `std::is_same_v<int, int>` → `true`；
@@ -286,7 +286,7 @@
 
 # 额外附赠（和 enable_if 同级）
 
-## 21. `std::void_t<T...>`（C++17 超级神器）
+## ~~21. `std::void_t<T...>`（C++17 超级神器）~~
 
 - **作用**：把任意类型列表变成 `void`
 - **用途**：检测某个类型是否拥有某个成员函数 / 成员类型

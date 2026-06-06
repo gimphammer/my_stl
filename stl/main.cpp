@@ -2,7 +2,7 @@
  * @Author: gimphammer@gmail.com
  * @Date: 2026-05-26 21:13:23
  * @LastEditors: gimphammer
- * @LastEditTime: 2026-06-06 09:00:26
+ * @LastEditTime: 2026-06-06 10:45:16
  * @Copyright: Copyright (c) 2026 by gimphammer@gmail.com, All rights reserved.
  * @Description: [None]
  */
@@ -19,6 +19,7 @@
 #include "stl/stl_tools_impl/my_conditional.h"
 #include "stl/stl_tools_impl/my_invoke_result.h"
 #include "stl/stl_tools_impl/mir.h"
+#include "stl/stl_tools_impl/my_void_t.h"
 
 int main(int argc, const char * argv[]) {
   // insert code here...
@@ -34,5 +35,6 @@ int main(int argc, const char * argv[]) {
   test_my_conditional();
   test_my_invoke_result();
   test_mir();
+  test_my_void();
   return EXIT_SUCCESS;
 }
